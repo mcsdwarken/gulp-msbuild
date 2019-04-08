@@ -1,5 +1,5 @@
 {
-  "name": "gulp-msbuild-2019",
+  "name": "gulp-current-msbuild",
   "version": "0.1.1",
   "description": "msbuild plugin for gulp. Inspired by grunt-msbuild. Written by Stefan Hoffman. Updated to run with VS 2019",
   "keywords": [
