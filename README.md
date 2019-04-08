@@ -1,4 +1,9 @@
-# gulp-msbuild
+# gulp-current-msbuild
+
+>This package is a fork of gulp-msbuild by Stefan Hoffmann. The only added feature is support for "Current" MSBUILD version introduced in Visual Studio 2019. It is still not maintained.
+>Add content below is attributed to Stefan Hoffmann.
+
+
 [![NPM](https://img.shields.io/npm/v/gulp-msbuild.svg?style=flat-square)](https://www.npmjs.com/package/gulp-msbuild)
 [![NPM downloads](https://img.shields.io/npm/dm/gulp-msbuild.svg?style=flat-square)](https://www.npmjs.com/package/gulp-msbuild)
 [![Travis](https://img.shields.io/travis/hoffi/gulp-msbuild/master.svg?style=flat-square)](https://travis-ci.org/hoffi/gulp-msbuild)
