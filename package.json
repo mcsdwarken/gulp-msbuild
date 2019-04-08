@@ -1,18 +1,18 @@
 {
-  "name": "gulp-msbuild",
-  "version": "0.5.5",
-  "description": "msbuild plugin for gulp. Inspired by grunt-msbuild.",
+  "name": "gulp-msbuild-2019",
+  "version": "0.1.1",
+  "description": "msbuild plugin for gulp. Inspired by grunt-msbuild. Written by Stefan Hoffman. Updated to run with VS 2019",
   "keywords": [
     "gulpplugin",
     "msbuild",
     "xbuild"
   ],
   "author": {
-    "name": "Stefan Hoffmann",
-    "email": "sthoffmann93@googlemail.com",
-    "url": "https://github.com/hoffi"
+    "name": "Max Mayorov",
+    "email": "max.mayorov@live.com",
+    "url": "https://github.com/mcsdwarken"
   },
-  "repository": "hoffi/gulp-msbuild",
+  "repository": "mcsdwarken/gulp-msbuild-2019",
   "scripts": {
     "test": "istanbul test ./node_modules/mocha/bin/_mocha --report html -- test/*.js --reporter spec",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"

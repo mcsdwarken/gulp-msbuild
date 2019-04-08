@@ -291,6 +291,12 @@ describe('msbuild-finder', function () {
       var vsProfessionalPath = path.join(pathRoot, 'Microsoft Visual Studio','2017','Professional');
       var vsCommunityPath = path.join(pathRoot, 'Microsoft Visual Studio','2017','Community');
       var vsBuildToolsPath = path.join(pathRoot, 'Microsoft Visual Studio','2017','BuildTools');
+
+      var vs2019EnterprisePath = path.join(pathRoot, 'Microsoft Visual Studio','2019','Enterprise');
+      var vs2019ProfessionalPath = path.join(pathRoot, 'Microsoft Visual Studio','2019','Professional');
+      var vs2019CommunityPath = path.join(pathRoot, 'Microsoft Visual Studio','2019','Community');
+      var vs2019BuildToolsPath = path.join(pathRoot, 'Microsoft Visual Studio','2019','BuildTools');
+
       var expectedResult = path.join(pathRoot, 'MSBuild', '15.0', 'Bin/amd64', 'MSBuild.exe');
       var expectedResult = path.join(windir, 'Microsoft.Net', 'Framework', expectMSBuildVersion, 'MSBuild.exe');
 
@@ -301,6 +307,10 @@ describe('msbuild-finder', function () {
       mock.expects('statSync').withArgs(vsProfessionalPath).throws();
       mock.expects('statSync').withArgs(vsCommunityPath).throws();
       mock.expects('statSync').withArgs(vsBuildToolsPath).throws();
+      mock.expects('statSync').withArgs(vs2019EnterprisePath).throws();
+      mock.expects('statSync').withArgs(vs2019ProfessionalPath).throws();
+      mock.expects('statSync').withArgs(vs2019CommunityPath).throws();
+      mock.expects('statSync').withArgs(vs2019BuildToolsPath).throws();
       mock.expects('statSync').returns({});
       mock.expects('readdirSync').withArgs(msbuildDir).returns(['padding', 'dir']);
 
